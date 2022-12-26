@@ -59,19 +59,19 @@ public class Pizza {
     public String getBill(){
         // your code goes here
         if(is_bill_generated==false) {
-            this.bill = "Base Price Of The Pizza: " + getPrice() + "\n";
+            this.bill = "Base Price Of The Pizza: "+this.price + "\n";
             if (extra_cheez == true) {
-                bill += "Extra Cheese Added: " + 80 + "\n";
+                bill += "Extra Cheese Added: "+80 + "\n";
             }
             if (extra_toppings = true && isVeg) {
-                bill += "Extra Toppings Added: " + 70 + "\n";
+                bill += "Extra Toppings Added: "+70 + "\n";
             } else if (extra_toppings) {
-                bill += "Extra Toppings Added: " + 120 + "\n";
+                bill += "Extra Toppings Added: "+120+ "\n";
             }
             if (add_takeAway == true) {
-                bill += "Paperbag Added: " + 20 + "\n";
+                bill += "Paperbag Added: "+20 + "\n";
             }
-            bill += "Total Price: " + total + "\n";
+            bill += "Total Price: "+total + "\n";
             return this.bill;
         }
         return null;
